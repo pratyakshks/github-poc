@@ -1,4 +1,5 @@
-# Version 1.0 - Ticket: PROJ-102
-a = 10
-b = 20
-print("Sum:", a + b)
+# Version 2.0 - Ticket: PROJ-102
+def add(a, b):
+    return a + b
+
+print("Sum:", add(10, 20))
