@@ -1,6 +1,5 @@
-# Version 3.0 - Ticket: PROJ-102
-def add(a, b, c=0):
-    return a + b + c
+# Version 4.0 - Ticket: PROJ-102
+def add(*numbers):
+    return sum(numbers)
 
-print("Sum of 2 numbers:", add(10, 20))
-print("Sum of 3 numbers:", add(10, 20, 30))
+print("Sum of multiple numbers:", add(5, 10, 15, 20))
