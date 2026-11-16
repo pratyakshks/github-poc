@@ -1,7 +1,12 @@
-# Version 4.0 - Ticket: PROJ-101
-def greet(name="World", uppercase=False):
-    message = f"Hello, {name}!"
-    print(message.upper() if uppercase else message)
+# Version 5.0 - Ticket: PROJ-101
+def greet(name="World", lang="en"):
+    greetings = {
+        "en": "Hello",
+        "es": "Hola",
+        "hi": "Namaste"
+    }
+    prefix = greetings.get(lang, "Hello")
+    print(f"{prefix}, {name}!")
 
-greet("GitHub User")
-greet("GitHub User", uppercase=True)
+greet("Pratyaksh", lang="en")
+greet("Pratyaksh", lang="hi")
